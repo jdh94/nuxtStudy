@@ -49,6 +49,7 @@
 
 <script setup lang="ts">
 const route = useRoute();
+const courseSlug = route.params.courseSlug as string;
 const { course } = userCourse(route.params.courseSlug as string);
 </script>
 

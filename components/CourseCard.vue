@@ -12,13 +12,14 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    thumbnail:{
-      type: String,
-      default: '',
-    },
-    title: String,
-    subtitle: String,
-  });
-  defineEmits(['click']);
+interface Props {
+  thumbnail: string;
+  title: string;
+  subtitle: string;
+}
+defineProps<Props>();
+
+defineEmits<{
+  click: [];
+}>();
 </script>
