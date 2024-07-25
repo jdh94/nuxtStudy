@@ -21,6 +21,7 @@ module.exports = {
   ],
   rules: {
     'no-console': 'off',
+    'vue/required-default-prop': 'off',
     'vue/html-self-closing': [
       'warn',
       {
