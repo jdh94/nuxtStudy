@@ -51,6 +51,12 @@
           unelevated
           :to="prevCourse.path"
         ></q-btn>
+        <q-btn
+          label="쿼리추가"
+          color="dark"
+          unelevated
+          :to="{ path: $route.path, query: { timestamp: Date.now() } }"
+        ></q-btn>
         <q-space />
         <q-btn
           v-if="nextCourse"
