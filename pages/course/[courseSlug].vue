@@ -75,6 +75,12 @@ const route = useRoute();
 const courseSlug = route.params.courseSlug as string;
 const { course, prevCourse, nextCourse } = userCourse(courseSlug);
 console.log("[courseSlug].vue 컴포넌트 setup hooks");
+// const title = ref("");
+definePageMeta({
+  key: (route) => route.fullPath,
+  // title: title.value,
+});
+console.log("route.meta.title: ", route.meta);
 </script>
 
 <style scoped></style>
