@@ -105,6 +105,9 @@ definePageMeta({
 });
 const memo = ref("");
 const completed = ref(false);
+const test = reactive({});
+test.dat = { aa: "22" };
+console.log(test);
 </script>
 
 <style scoped></style>
